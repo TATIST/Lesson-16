@@ -30,6 +30,7 @@ a:hover {
         margin-top: 50px;
         left: 0;
         width: 100%;
+        z-index: 1;
 
         @include media(">=1280px") {
             padding: 60px;
@@ -39,9 +40,10 @@ a:hover {
         a.logo {
             background: url(../images/logo.png) no-repeat;
             display: block;
-            width: 413px;
+            max-width: 413px;
             height: 54px;
             margin: auto;
+            background-size: contain;
 
             @include media(">=1280px") {
                 margin: 2px;
@@ -208,6 +210,7 @@ main {
         background: url(../images/PorscheSinger911-small.jpg)no-repeat;
         background-size: auto;
         min-height: 100vh;
+        position: relative;
 
         @include media(">500px") {
             background: url(../images/PorscheSinger911-big.jpg) no-repeat;

@@ -171,7 +171,8 @@ a:hover {
     position: absolute;
     margin-top: 50px;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     @media (min-width: 1280px) {
       .wrapper header {
         padding: 60px;
@@ -179,9 +180,10 @@ a:hover {
     .wrapper header a.logo {
       background: url(../images/logo.png) no-repeat;
       display: block;
-      width: 413px;
+      max-width: 413px;
       height: 54px;
-      margin: auto; }
+      margin: auto;
+      background-size: contain; }
       @media (min-width: 1280px) {
         .wrapper header a.logo {
           margin: 2px; } }
@@ -298,7 +300,8 @@ main {
   main .main-image {
     background: url(../images/PorscheSinger911-small.jpg) no-repeat;
     background-size: auto;
-    min-height: 100vh; }
+    min-height: 100vh;
+    position: relative; }
     @media (min-width: 501px) {
       main .main-image {
         background: url(../images/PorscheSinger911-big.jpg) no-repeat;
